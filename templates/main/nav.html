@@ -1,0 +1,12 @@
+{% extends 'main/base.html' %}
+{% block body %}
+<nav>
+    <div class="nav-wrapper">
+      <a href="{%url 'home' %}" class="brand-logo">Sanjeev Dhatterwal</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="{% url 'projects' %}">Project</a></li>
+        <li><a href="{% url 'languages' %}">Skills</a></li>
+      </ul>
+    </div>
+  </nav>
+{% endblock %}

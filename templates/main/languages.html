@@ -1,0 +1,34 @@
+{% extends 'main/base.html' %}
+{% block  head %}
+<title>Skills</title>
+{% endblock %}
+
+{% block body %}
+{% include 'main/nav.html' %}
+<div class="divider"></div>
+  <div class="section">
+    <h5>Python</h5>
+    <ul class="collection">
+        <li class="collection-item"><b>Image processing: </b>Open-cv, cvzone</li>
+        <li class="collection-item"><b>data handling: </b>pandas, seaborn, numpy</li>
+        <li class="collection-item"><b>data acquisition: </b>scrapy,selenium,requests, telegram</li>
+    </ul>
+  </div>
+  <div class="divider"></div>
+  <div class="section">
+    <h5>Java Programming</h5>
+    <ul class="collection">
+        <li class="collection-item">Data structures, OOPS, servlets</li>
+    </ul>
+  </div>
+  <div class="divider"></div>
+  <div class="section">
+    <h5>Web Programming</h5>
+    <ul class="collection">
+        <li class="collection-item">html, CSS</li>
+        <li class="collection-item">Node JS</li>
+        <li class="collection-item">Django, flask</li>
+    </ul>
+  </div>
+
+{% endblock %}

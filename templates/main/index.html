@@ -1,0 +1,48 @@
+{% extends 'main/base.html' %}
+{% block  head %} 
+<title>Portfolio website</title>
+{% endblock %} 
+{% block body %}
+{% include 'main/nav.html' %}
+<div class="container">
+    <div class="row">
+        <div class="col s6 m8 l6">
+            <div class="row">
+    <div class="col s12 m7">
+      <div class="card">
+        <div class="card-image">
+          <img class="materialboxed" width="650" src="https://pbs.twimg.com/profile_images/1243800897546645504/PQjYioUv_400x400.jpg" alt="something">
+          <span class="card-title">Sanjeev Dhatterwal</span>
+        </div>
+        <div class="card-action">
+          <a href="https://github.com/sanjeevdhatterwal">github</a>
+          <a href="https://www.linkedin.com/in/sanjeev-dhatterwal-b7904520b">linkedin</a>
+        </div>
+      </div>
+    </div>
+  </div>
+        </div>
+        <div class="col s6 m8 l6">
+            <div class="row">
+    <div class="col s12 m6">
+      <div class="card blue-grey darken-1">
+        <div class="card-content white-text">
+          <span class="card-title">Intro</span>
+          <p>Currently pursuing my B.Tech. from VIT, Vellore. Upcoming Advanced app Engineer in Accenture</p>
+        </div>
+      </div>
+    </div>
+  </div>
+        </div>
+
+    </div>
+</div>
+{% endblock %}
+{% block script %}
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.materialboxed');
+    var instances = M.Materialbox.init(elems);
+  });
+</script>
+{% endblock %}

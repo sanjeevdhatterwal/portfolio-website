@@ -1,0 +1,126 @@
+{% extends 'main/base.html' %}
+{% block body %}
+{% block  head %}
+<title>Projects</title>
+{% endblock %}
+{% include 'main/nav.html' %}
+
+
+<ul class="collapsible">
+    <li>
+      <div class="collapsible-header"><i class="material-icons">whatshot</i>Snapchat-filters</div>
+      <div class="collapsible-body"><span>
+      <ul class="collection with-header">
+                      <li class="collection-header"><h4>Project Info</h4></li>
+                      <li class="collection-item"><div> <p>I am using Harcascades classifier for face and eyes detection
+                          install the necessary imported library Run the file snapchat_filters.ipynb.
+                      you will have specs and moustaches
+                      </p>
+                      </div></li>
+                      <li class="collection-item"><p><b>Library used:</b> os,opencv,numpy, cvzone, haarcascade classifier
+                      </p></li>
+                       <li class="collection-item"><div>github
+                           <a href="https://github.com/sanjeevdhatterwal/snapchat-filters" class="secondary-content">
+                               <i class="material-icons">send</i></a></div></li>
+              </ul>
+      </span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">whatshot</i>telegram-bot</div>
+      <div class="collapsible-body"><span>
+              <ul class="collection with-header">
+                      <li class="collection-header"><h4>Project Info</h4></li>
+                      <li class="collection-item"><div> <p>first create your own python virtual environment(advisable).
+                              Here there are two ways of creating an automated chatbot using webhook and echo.
+                              Both these files are independent of each other and can be run individualy.
+                              In token use your own token that you recieved while creating a bot</p>
+                      </div></li>
+                      <li class="collection-item"><p><b>Library used:</b> telegram, logging,flask,requests
+                      </p></li>
+                       <li class="collection-item"><div>github
+                           <a href="https://github.com/sanjeevdhatterwal/telegram-bot" class="secondary-content"><i class="material-icons">send</i></a></div></li>
+              </ul>
+      </span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">whatshot</i>scrapy-project</div>
+      <div class="collapsible-body"><span>
+          <ul>
+          <li class="collection-header"><h4>Project Info</h4></li>
+                      <li class="collection-item"><div> <p>There are two main files: challenge spider and quotes spider
+                          In challenge spider we are fetching the data of name and price of the books that are given to us in the given link.
+                          We are fetching the data until we reach the last page. In second file we are fetching the quotes from the given url.
+                          We are creating three spiders which stores the data in different forms html than json and than dataset
+                      </p>
+                      </div></li>
+                      <li class="collection-item"><p><b>Library used:</b> scrapy
+                      </p></li>
+                       <li class="collection-item"><div>github
+                           <a href="https://github.com/sanjeevdhatterwal/scrapy-project" class="secondary-content">
+                               <i class="material-icons">send</i></a></div></li>
+              </ul></span>
+      </div></li>
+        <li>
+      <div class="collapsible-header"><i class="material-icons">whatshot</i>mask-detection</div>
+      <div class="collapsible-body"><span>
+          <ul>
+          <li class="collection-header"><h4>Project Info</h4></li>
+                      <li class="collection-item"><div> <p>We are training the data using the set of images in train files.
+                          Than we are taking live video stream and than we are detecting mask
+                      </p>
+                      </div></li>
+                      <li class="collection-item"><p><b>Library used:</b> tensorflow, keras, opencv, os, keras
+                      </p></li>
+                       <li class="collection-item"><div>github
+                           <a href="https://github.com/sanjeevdhatterwal/mask-detection" class="secondary-content">
+                               <i class="material-icons">send</i></a></div></li>
+              </ul>
+      </span></div>
+    </li>
+        <li>
+      <div class="collapsible-header"><i class="material-icons">whatshot</i>tracking-people</div>
+      <div class="collapsible-body"><span>
+         <ul>
+          <li class="collection-header"><h4>Project Info</h4></li>
+                      <li class="collection-item"><div> <p>It captures live video stream and detect the entry and
+                          exit based on the motion of the person with respect to camera.
+                      </p>
+                      </div></li>
+                      <li class="collection-item"><p><b>Library used:</b> tensorflow, opencv, os, datetime
+                      </p></li>
+                       <li class="collection-item"><div>github
+                           <a href="https://github.com/sanjeevdhatterwal/tracking-people" class="secondary-content">
+                               <i class="material-icons">send</i></a></div></li>
+              </ul>
+      </span></div>
+    </li>
+        <li>
+      <div class="collapsible-header"><i class="material-icons">whatshot</i>automating-codecheff</div>
+      <div class="collapsible-body"><span>
+          <ul>
+          <li class="collection-header"><h4>Project Info</h4></li>
+                      <li class="collection-item"><div> <p>Two jupiiter notebook files First is automating the codecheff solution and
+                          the other for leetcode. Pre requisites: you should have the code on your machine and
+                          account on the platform that you are using.
+                          Some changes can be made according to the languages selected and other things according to you.
+                      </p>
+                      </div></li>
+                      <li class="collection-item"><p><b>Library used:</b>  selenium
+                      </p></li>
+                       <li class="collection-item"><div>github
+                           <a href="https://github.com/sanjeevdhatterwal/automating-codecheff-soln.." class="secondary-content">
+                               <i class="material-icons">send</i></a></div></li>
+              </ul>
+          </span></div>
+    </li>
+  </ul>
+
+{% endblock %}
+{% block script %}
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.collapsible');
+    var instances = M.Collapsible.init(elems);
+  });
+</script>
+{% endblock %}
